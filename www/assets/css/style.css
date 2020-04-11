@@ -38,7 +38,7 @@ h1, h2, h3, h4, h5, h6 {
     color: black;
 }
 
-.nav-pills .nav-link.active h5, .show>.nav-pills .nav-link h5 {
+.nav-pills .nav-link.active h6, .show>.nav-pills .nav-link h6 {
     font-weight: 500;
 }
 
