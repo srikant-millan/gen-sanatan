@@ -1,12 +1,22 @@
-
+body {
+    font-family: "Avenir Next", "Avenir", sans-serif !important;
+}
 h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
     line-height: 1;
 }
 .side-nav {
     max-width: 300px;
+    position: absolute;
+    z-index: 2;
+    transition: 0.5s;
+    box-shadow: -5px 0px 10px 1px;
 }
-.text-primary {
+
+.side-nav .logo-content {
+    background-color: #efefef;
+}
+.text-primary, .btn-link {
     color: #42aaf5 !important;
 }
 
@@ -17,6 +27,20 @@ h1, h2, h3, h4, h5, h6 {
 .bg-light {
     background-color: #efefef !important;
 }
+
+.btn-primary {
+    background-color: #42aaf5;
+    border: 0;
+}
+
+.nav-link {
+    color: #42aaf5;
+}
+
+.form-control {
+    border-radius: 0;
+}
+
 .nav-pills .nav-link{
     background-color: transparent;
     border-bottom: 1px solid black;
