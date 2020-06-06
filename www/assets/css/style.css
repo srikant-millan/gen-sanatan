@@ -41,6 +41,10 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 0;
 }
 
+.form-group {
+    padding-bottom: .25rem;
+}
+
 .nav-pills .nav-link{
     background-color: transparent;
     border-bottom: 1px solid black;
