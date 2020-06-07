@@ -134,23 +134,27 @@
                   <i class="fa fa-exclamation-circle"></i>
                   The information you provided is not accepted. Please check below.
                 </p>
-                  <form>
+                  <form class="needs-validation" novalidate>
                     <div class="form-group row pt-2">
                       <label for="staticEmail" class="col-sm-4 col-form-label">First name:</label>
                       <div class="col">
-                        <input type="input" class="form-control" id="inputPassword" placeholder="First name is required" required>
+                        <input type="input" class="form-control" id="firstName" placeholder="First name is required">
                       </div>
                     </div>
                     <div class="form-group row">
                       <label for="staticEmail" class="col-sm-4 col-form-label">Last name:</label>
                       <div class="col">
-                        <input type="input" class="form-control" id="inputPassword" placeholder="Last name is required" required>
+                        <input type="input" class="form-control" id="firstLast" placeholder="Last name is required">
                       </div>
                     </div>
                     <div class="form-group row">
                       <label for="staticEmail" class="col-sm-4 col-form-label">Email address:</label>
                       <div class="col">
                         <input type="email" class="form-control" id="inputPassword" placeholder="Email address is required" required>
+                        <small>Use an active email address that you use. This is going to be your login id.</small>
+                        <div class="invalid-feedback">
+                          Please choose a username.
+                        </div>
                       </div>
                     </div>
                     <div class="form-group row">
@@ -166,11 +170,10 @@
                       </div>
                     </div>
                     <div class="row pt-4">
-                      <div class="col-sm-4">
-                      </div>
+                      <div class="col-sm-4"></div>
                       <div class="col">
                         <a class="btn btn-link p-0" href="login.html"> Sign in instead</a>
-                        <button type="button" class="btn btn-primary float-right  ">Register</button>
+                        <button type="submit" class="btn btn-primary float-right  ">Register</button>
                       </div>
                     </div>
                   </form >
@@ -199,5 +202,22 @@
         $('.side-nav').show().animate({left: "0"}, 100);
       });
     });
+  (function() {
+    'use strict';
+    window.addEventListener('load', function() {
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.getElementsByClassName('needs-validation');
+      // Loop over them and prevent submission
+      var validation = Array.prototype.filter.call(forms, function(form) {
+        form.addEventListener('submit', function(event) {
+          if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        }, false);
+      });
+    }, false);
+  })();
 </script>
 </html>
