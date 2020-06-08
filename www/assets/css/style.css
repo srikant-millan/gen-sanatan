@@ -8,7 +8,7 @@ h1, h2, h3, h4, h5, h6 {
 .side-nav {
     max-width: 300px;
     position: absolute;
-    z-index: 2;
+    z-index: 1031;
     transition: 0.5s;
     box-shadow: -5px 0px 10px 1px;
 }
@@ -104,7 +104,7 @@ nav .navbar-brand:first-of-type {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #efefef;
+    background-color: #efefef !important;
     min-width: 240px;
     box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.2);
     padding: 12px 16px;
@@ -112,6 +112,25 @@ nav .navbar-brand:first-of-type {
     right: 1rem;
 }
 
+.dropdown-content .nav-link {
+    background-color: transparent;
+    border-bottom: 1px solid black;
+    border-radius: 0;
+    color: black;
+    padding: 0;
+    padding-top: 1rem;
+    font-size: 1rem;;
+}
+
+.dropdown-content .nav-link:hover {
+    color: #42aaf5!important;
+}
+
 .dropdown-sm:hover .dropdown-content {
     display: block;
+}
+
+.mid-position {
+    position: relative;
+    top: -20px;
 }
