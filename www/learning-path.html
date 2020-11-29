@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" type="image/png" href="assets/img/favicon.ico">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>Data Learning | Genlogos</title>
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
+    name='viewport' />
+  <!-- CSS Files -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+  <link href="assets/css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div id="sideNabBtn" class="side-nav col-6 col-sm-4 col-md-4 col-lg-3 col-xl-3">
+        <div class="logo-content row d-flex flex-row sticky-top">
+          <div class="pt-1 pl-1">
+            <button id="sideNavBtn" type="button" class="side-nav-btn btn btn-light btn-lg pt-3">
+              <i class="fa fa-close"></i>
+            </button>
+          </div>
+          <div class="pt-3 pl-1">
+            <a class="navbar-brand" href="index.html">
+              <h3 class="font-weight-light">
+                <span class="text-primary">Gen</span><span class="text-dark">logos</span>
+              </h3>
+            </a>
+          </div>
+        </div>
+        <div class="row d-flex align-content-stretch">
+          <div class="col pl-4">
+            <nav class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <div class="navbar-brand">
+                <h5 class="font-weight-light">
+                  Student Home
+                </h5>
+              </div>
+              <a class="nav-link active" href="#">
+                <h6>My Profile</h6>
+              </a>
+              <a class="nav-link" href="#">
+                <h6>My Enrollment History</h6>
+              </a>
+              <a class="nav-link" href="#">
+                <h6>My Account History</h6>
+              </a>
+              <a class="nav-link" href="#">
+                <h6>Announcements</h6>
+              </a>
+              <a class="nav-link" href="#">
+                <h6>Help</h6>
+              </a>
+              <div class="navbar-brand">
+                <h5 class="font-weight-light">
+                  <span class="text-primary">Gen</span>logos Education
+                </h5>
+              </div>
+              <a class="nav-link" href="#">
+                <h6>Courses</h6>
+              </a>
+              <a class="nav-link" href="#">
+                <h6>Learning Path</h6>
+              </a>
+              <a class="nav-link" href="registration.html">
+                <h6>Registration</h6>
+              </a>
+              <a class="nav-link" href="#">
+                <h6>Verify a Certificate</h6>
+              </a>
+              <a class="nav-link" href="#">
+                <h6>Resources</h6>
+              </a>
+              <div class="navbar-brand">
+                <h5 class="font-weight-light">
+                  <span class="text-primary">Gen</span>logos Services
+                </h5>
+              </div>
+              <a class="nav-link" href="#">
+                <h6>Data Analysis</h6>
+              </a>
+              <a class="nav-link" href="#">
+                <h6>Data and Decision</h6>
+              </a>
+              <a class="nav-link" href="#">
+                <h6>Projects</h6>
+              </a>
+              <a class="nav-link" href="#">
+                <h6>Contact Us</h6>
+              </a>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div id="mainContent" class="col">
+        <div class="row justify-content-center">
+          <div class="col">
+            <div class="row py-2">
+              <div id="sideNabBtnDefault" class="side-nav-btn col">
+                <div class="row d-flex flex-row">
+                  <div class="pt-1">
+                    <button id="sideNavBtn" type="button" class="btn btn-light btn-lg">
+                      <i class="fa fa-bars"></i>
+                    </button>
+                  </div>
+                  <div class="pt-2 pl-2">
+                    <a class="navbar-brand" href="index.html">
+                      <h3 class="font-weight-light">
+                        <span class="text-primary">Gen</span><span class="text-dark">logos</span>
+                      </h3>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <ul class="nav justify-content-end">
+                  <!-- <li class="nav-item pt-2">
+                    <a class="nav-link active" href="login.html">Log in</a>
+                  </li> -->
+                  <li class="nav-item">
+                    <div class="dropdown-sm pl-6 mt-2">
+                      <span>
+                        Hi, Santanu
+                        <a class="nav-link d-inline" href="#">
+                          <i class="fa fa-user pl-2"></i>
+                        </a>
+                      </span>
+                      <div class="dropdown-content">
+                        <h5 class="pt-2">Profile and Settings</h5>
+                        <a class="nav-link" href="#">My Profile</a>
+                        <a class="nav-link" href="#">My Email Preferences</a>
+                        <a class="nav-link" href="#">My Grading Preferences</a>
+                        <button class="btn btn-primary btn-lg btn-block mt-4">Sign out</button>
+                </ul>
+              </div>
+            </div>
+            </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div id="content-column" class="col-lg-10 col-xl-8">
+            <div class="container pb-4">
+              <div class="learning-path text-center">
+                <div class="learning-path-track mb-4">
+                    <div class="active">Select Learning Path</div>
+                    <div class="connector"></div>
+                    <div> Complete the Course</div>
+                    <div class="connector"></div>
+                    <div> Earn Certificate</div>
+                    <div class="connector"></div>
+                    <div>Share Certificate</div>
+                </div>
+                <h2 class="text-center weight-light">Learning Path</h2>
+              </div>
+              <div class="course-title-container mb-3">
+                <div class="row align-items-end">
+                  <div class="col pl-0">
+                    <h4 class="weight-light">Courses for Students</h4>
+                  </div>
+                  <div class="col text-right title-avatar">
+                    <img src="./assets/img/students.png" width="200px"/>
+                  </div>
+                </div>
+                <div class="row bg-brand-blue justify-content-end">
+                  <div class="col color-white text-right py-1">
+                    6 - 8 Weeks each
+                  </div>
+                </div>
+              </div>
+              <div class="row student-courses">
+                <div class="col">
+                  <div class="card-deck mb-4">
+                    <div class="card ml-0">
+                      <div class="card-header">
+                        <div class="row">
+                          <div class="col-10">
+                            <h4>
+                              <a class="nav-link p-0" href="/course/1/introduction-to-statistics">
+                                Data Science Foundations
+                              </a>
+                            </h4>
+                            <p class="mb-0"><strong>150</strong> <small>Instructor led hours</small></p>
+                            <p class="mb-0"><small>Total <strong>5</strong> Courses</small></p>
+                          </div>
+                          <div class="col-2"></div>
+                        </div>  
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">
+                          Data is everywhere today - from retail websites to smart devices, to internet, social medias, bioinformatics, finances
+                          etc. This massive growth in the amount and variety of data needs the data scientists to make sense of these data and
+                          uncover the hidden solutions to messy business problems.
+                          
+                          This learning path consists of five courses that introduces you to Data Science from a practitioner point of view. You
+                          get to know about the different kinds of data and the database management system. You get the practical knowledge on how
+                          to write the queries to process data and do the data analysis in a technical way and derive inferences from it. The
+                          courses also provide the knowledge of different machine learning algorithms.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="card mr-0">
+                      <div class="card-header">
+                        <div class="row">
+                          <div class="col-10">
+                            <h4>
+                              <a class="nav-link p-0" href="/course/1/introduction-to-statistics">
+                                Data Analytics
+                              </a>
+                            </h4>
+                            <p class="mb-0"><strong>150</strong> <small>Instructor led hours</small></p>
+                            <p class="mb-0"><small>Total <strong>5</strong> Courses</small></p>
+                          </div>
+                          <div class="col-2"></div>
+                        </div>  
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">
+                          Learn how to code in Python for Data Science for Data Analysis and Visualization. You get to know about the different
+                          kinds of data and the database management system. You get practical knowledge on how to write the SQL queries and do the
+                          data analysis in a technical way and derice inferences from it. This is an action-packed learning path for Data Analysts
+                          or aspiring Data Analysts.
+                          
+                          You get to know different Python Packages for Data Analysis and Visualization like numpy, scipy, matplotlib, seaborn
+                          etc. You will get to know how to create beautiful and meaningful graphs/plots and telling a story about your data.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-deck mb-4">
+                    <div class="card ml-0">
+                      <div class="card-header">
+                        <div class="row">
+                          <div class="col-10">
+                            <h4>
+                              <a class="nav-link p-0" href="/course/1/introduction-to-statistics">
+                                Machine Learning
+                              </a>
+                            </h4>
+                            <p class="mb-0"><strong>150</strong> <small>Instructor led hours</small></p>
+                            <p class="mb-0"><small>Total <strong>5</strong> Courses</small></p>
+                          </div>
+                          <div class="col-2"></div>
+                        </div>  
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">
+                          Throughout the guided lectures and labs, you will get hands on experience on how to deal with data problems. You will
+                          start with introduction to data science, core concepts, inferential statics.
+                          
+                          Then, you will start with the basic machine learning concepts and algorithms using standard Python libraries like
+                          scikit-learn to solve the real life data problems. In the advanced courses, you will learn the working principles of the
+                          algorithms and build your own library.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="card mr-0">
+                      <div class="card-header">
+                        <div class="row">
+                          <div class="col-10">
+                            <h4>
+                              <a class="nav-link p-0" href="/course/1/introduction-to-statistics">
+                                Deep Learning
+                              </a>
+                            </h4>
+                            <p class="mb-0"><strong>150</strong> <small>Instructor led hours</small></p>
+                            <p class="mb-0"><small>Total <strong>5</strong> Courses</small></p>
+                          </div>
+                          <div class="col-2"></div>
+                        </div>  
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">
+                          In this learning path, you will start with the baic concepts of data science and inferential statistics. You will learn
+                          the concepts of Deep Learning process and the Python libraries like TensorFlow.
+                          
+                          Then you will get the hands on experience in solving problems using Deep Learning methods. Throughout the course, you
+                          will be able to see how python libraries can be used in curve fitting, regression, classification and minimizing the
+                          error functions. You will get to know different types of deep architectures like RNN, CNN and Autoecoders.
+                        </p>
+                      </div>
+                    
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="course-title-container mb-3">
+                <div class="row align-items-end">
+                  <div class="col pl-0">
+                    <h4 class="weight-light">Courses for Professionals</h4>
+                  </div>
+                  <div class="col text-right title-avatar">
+                    <img src="./assets/img/students.png" width="200px"/>
+                  </div>
+                </div>
+                <div class="row bg-brand-dark justify-content-end">
+                  <div class="col color-white text-right py-1">
+                    2 - 16 Hours each
+                  </div>
+                </div>
+              </div>
+              <div class="row professional-courses">
+                <div class="col">
+                  <div class="card-deck mb-4">
+                    <div class="card ml-0">
+                      <div class="card-header">
+                        <div class="row">
+                          <div class="col-12">
+                            <h5>
+                              <a class="nav-link p-0" href="/course/1/introduction-to-statistics">
+                                Data Science for Professionals
+                              </a>
+                            </h5>
+                            <p class="mb-0"><strong>2</strong> <small>Instructor led hours</small></p>
+                            </div>
+                        </div>  
+                      </div>
+                      <div class="card-body">
+                        <h6>An overview of Data Science methods and techniques</h6>
+                        <p class="card-text">
+                          This is the age of Information and Data. We believe that every professional needs to be a data literate. This is a two
+                          hours program designed for individual contributors, junior to mid-level professionals coming from either private or
+                          public sectors seeking to manage or will manage data science teams or vendors.
+                          
+                          You will get to know the overview of data processing techniques, some mathematical and statistical terms and tools used
+                          in a data science project and the principles and practices of data science in industry. We will demonstrate few hands-on
+                          example how inferences are drawn from the data to make decisions.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="card mr-0">
+                      <div class="card-header">
+                        <div class="row">
+                          <div class="col-12">
+                            <h5>
+                              <a class="nav-link p-0" href="/course/1/introduction-to-statistics">
+                                Data Science for Managers
+                              </a>
+                            </h5>
+                            <p class="mb-0"><strong>2</strong> <small>Instructor led hours</small></p>
+                            
+                          </div>
+                        </div>  
+                      </div>
+                      <div class="card-body">
+                        <h6>An overview of how data-based decisions can drive your business</h6>
+                        <p class="card-text">
+                          This is a non-technical and non-mathematical overview of data science designed for project managers, product managers,
+                          Research and Development managers and CEOs. This is a detailed overview mainly to explain how you can make better
+                          business decions for your company using the inferences drawn from the historical data.
+                          
+                          We will demonstrate different tools and techniques used for data analysis. You will see several examples and stories
+                          explainign dat driven business decisions. Also, get familiar with beautiful and meaningful graphs and plots for your
+                          business reporting hod how effective they are.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="card mr-0">
+                      <div class="card-header">
+                        <div class="row">
+                          <div class="col-12">
+                            <h5>
+                              <a class="nav-link p-0" href="/course/1/introduction-to-statistics">
+                                Data Science 2 - Workshop
+                              </a>
+                            </h5>
+                            <p class="mb-0"><strong>16</strong> <small>Instructor led hours</small></p>
+                          </div>
+                        </div>  
+                      </div>
+                      <div class="card-body">
+                        <h6>Two days workshop on data and familiarity with ML algorithms</h6>
+                        <p class="card-text">
+                          If your team or company is starting or planning to start your own Data Analysis or Data Science project but not sure how
+                          to start or where to start. What are the processes and tools and artifacts produced in a Data based project. This course
+                          is for you.
+                          
+                          This is a two days workshop onsite at your worksite or online depending on your requirement, we disccuss the different
+                          data analysis tools and techniques, data mining processes. We discuss how to run a project from start to end (taking it
+                          to production and produce value out of it.)
+                          
+                          <p>This is a hands-on workshop where the participants get to write code, execute it to solve real life problems.</p>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col text-right fixed-bottom bg-white">
+      <span class="text-primary">Gen</span>logos © 2020 <a href="#" class="nav-link d-inline pr-2"> Privacy</a> | <a
+        href="#" class="nav-link d-inline pl-2">Terms</a>
+    </div>
+  </div>
+  </div>
+</body>
+<!--   Core JS Files   -->
+<script src="assets/js/core/jquery.min.js" type="text/javascript"></script>
+<script src="assets/js/core/popper.min.js" type="text/javascript"></script>
+<script src="assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('.side-nav').height($(document).outerHeight());
+    $('.side-nav').hide();
+    $('#sideNavBtn').on("click", (e) => {
+      $('.side-nav').hide().animate({ left: "-310" }, 500, () => {
+        $('#sideNabBtnDefault').show()
+      });
+      $('#sideNabBtnDefault').show();
+    });
+    $('#sideNabBtnDefault').on("click", () => {
+      $('.side-nav').show().animate({ left: "0" }, 100);
+    });
+
+    $('.dropdown-sm').on("click", () => $('.dropdown-content').toggle());
+  });
+</script>
+
+</html>
