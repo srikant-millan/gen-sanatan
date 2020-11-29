@@ -1,8 +1,11 @@
+div {
+    /* border:1px solid #42aaf5; */
+}
 body {
     font-family: "Avenir Next", "Avenir", sans-serif !important;
 }
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1;
 }
 .side-nav {
@@ -11,10 +14,7 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 1031;
     transition: 0.5s;
     box-shadow: -5px 0px 10px 1px;
-}
-
-.side-nav .logo-content {
-    background-color: #efefef;
+    background-color: #ffffff !important;
 }
 .text-primary, .btn-link {
     color: #42aaf5 !important;
@@ -133,4 +133,51 @@ nav .navbar-brand:first-of-type {
 .mid-position {
     position: relative;
     top: -20px;
+}
+
+.bg-brand-blue {
+    background-color: #42aaf5;
+}
+
+.color-white {
+    color: #ffffff;
+}
+
+.bg-brand-dark {
+    background-color: #656565;
+}
+
+/* -------------------Learning Path--------------------------- */
+
+.learning-path .learning-path-track {
+    display: inline-grid;
+    grid-template-columns: 3fr .9fr 2.5fr .9fr 2.5fr .9fr 3fr;
+    grid-template-rows: auto;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.learning-path .learning-path-track div{
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+    font-size: .8rem;
+    background-color: #656565;
+    padding: 2px 1rem;
+}
+
+.learning-path .learning-path-track div.active {
+    background-color: #42aaf5;
+}
+
+.student-courses .card-header {
+    background-color: transparent;
+}
+
+.student-courses .card-body {
+    background-color: #F6F6F6;
+}
+
+.title-avatar {
+    max-width: 100%;
 }
